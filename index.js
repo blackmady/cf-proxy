@@ -43,7 +43,7 @@ var src_default = {
 								action="https://dl.${env.DOMAIN}"
 								method="get" target="_blank"
 								style="display: flex; align-items: center;"
-								onsubmit="window.open('https://dl.${env.DOMAIN}/' + new URL(this.elements.url.value).pathname, '_blank'); return false;"
+								onsubmit="window.open('https://dl.${env.DOMAIN}' + new URL(this.elements.url.value).pathname, '_blank'); return false;"
 							>
 								<input
 									type="url"
